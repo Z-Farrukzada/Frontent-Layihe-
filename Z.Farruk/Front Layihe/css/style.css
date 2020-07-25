@@ -1,0 +1,1624 @@
+@import url("https://fonts.googleapis.com/css2?family=Numans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+*{
+  text-decoration: none;
+}
+
+.menu {
+  z-index: 9999999999;
+  
+}
+header {
+  position: relative;
+  background-color: white;
+}
+.cardmenu a {
+  color: #2f2f2f;
+}
+
+.sticky {
+  position: fixed;
+  z-index: 90000;
+  border-bottom: 1px solid rgb(187, 182, 182);
+  width: 100vw;
+  height: 100px;
+}
+.texts {
+  position: absolute;
+  z-index: 12121212;
+  right: 40px;
+  top: 100px;
+  opacity: 0;
+  height: 50px;
+  font-size: large;
+}
+.hamburger {
+  width: 300px;
+  position: fixed;
+  overflow: auto;
+  height: 100vh !important;
+  background-color: rgb(255, 254, 254);
+  z-index: 100000000;
+  top: 0;
+  right: -400px;
+}
+.right {
+  right: 0px !important;
+  transition: all 0.5s;
+}
+
+.detamenu {
+  margin: 50px 30px;
+}
+details summary {
+  border: none;
+  outline: none;
+}
+
+details > summary::-webkit-details-marker {
+  font-size: 12px !important;
+}
+details[open] summary ~ * {
+  animation: test 0.5s ease-in-out;
+}
+@keyframes test {
+  0% {
+    opacity: 0;
+    margin-left: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+}
+.detamenu details {
+  padding-top: 20px;
+  transition: all 0.5s;
+}
+
+.fa-bars {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  z-index: 10000;
+  font-size: 25px;
+  display: none !important;
+}
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 25px;
+  font-size: 20px;
+  color: red;
+}
+
+.menu {
+  z-index: 1999999999;
+}
+
+.menu img {
+  width: 220px;
+  margin: 40px 20px;
+}
+
+.menu ul {
+  z-index: 3333333333;
+  margin-left: 40px;
+  padding-right: 20px;
+}
+
+.menu ul li {
+  display: inline-block;
+  padding: 2px 6px;
+  color: rgb(68, 67, 67);
+}
+
+.menu ul li .homemenu {
+  position: absolute;
+  left: 0;
+  width: 150px;
+  z-index: 300;
+  transform: translateY(-300px) !important;
+  margin-top: 2px;
+}
+.menu ul li .homemenu li {
+  font-size: 14px !important;
+  width: 150px;
+}
+
+.menu ul li:hover .homemenu {
+  transform: translateY(0px) !important;
+  transition: all 0.5s;
+  z-index: 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: black;
+  font-weight: 400;
+  font-family: "Numans", sans-serif;
+  display: block;
+  color: rgb(66, 66, 66);
+}
+
+.menu ul li a:hover {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.pages {
+  position: relative;
+  left: 10% !important;
+  line-height: 1.3;
+  font-size: 16px;
+}
+.submenu {
+  position: absolute;
+  width: 170% !important;
+  right: -200px !important;
+  margin-top: 5px;
+  height: 400px;
+  font-family: sans-serif;
+  z-index: 400;
+  background-color: white;
+  transform: translateY(-500px);
+}
+.submenulists {
+  width: 20%;
+  float: left;
+}
+.submenulists li {
+  float: none !important;
+  display: block !important;
+  line-height: 2;
+  font-size: 12px;
+  padding-left: 50px;
+  color: rgb(149, 149, 149);
+}
+.submenulists li:nth-child(1) {
+  color: black;
+  font-size: 23px;
+  font-family: "Noticia Text", serif;
+}
+ul li:hover .submenu {
+  transform: translateY(0px);
+  transition: all 0.5s;
+}
+
+.portfolio {
+  position: relative;
+  left: 28% !important;
+  color: rgb(155, 155, 155);
+  margin-top: 1.5px;
+}
+.portfolio li {
+  padding-left: 10px;
+  color: rgb(155, 155, 155);
+}
+.portfolio .fa-arrow-right {
+  font-size: 6px;
+  padding-left: 5px;
+}
+.portfoliolayout {
+  position: relative;
+  left: 125px !important;
+  top: 95px;
+  width: 190px !important;
+  display: none !important;
+  font-size: 15px;
+}
+
+.portfolio li:nth-child(4):hover .portfoliolayout {
+  display: block !important;
+}
+.portfolio li:nth-child(5):hover .portfoliolayout {
+  display: block !important;
+}
+.blog {
+  position: relative;
+  left: 40% !important;
+  margin-top: 1px;
+}
+.blog i {
+  font-size: 8px;
+  padding-left: 5px;
+}
+.post {
+  position: relative;
+  display: none !important;
+  left: 55% !important;
+  top: 50px;
+
+  width: 130px !important;
+}
+.blog li:nth-child(3):hover .post {
+  display: block !important;
+}
+.elements {
+  position: relative;
+  left: 54% !important;
+  margin-top: 1.5px;
+}
+.elements .fa-arrow-right {
+  font-size: 8px;
+  padding-left: 35px;
+}
+.elements .elementsmenu {
+  position: absolute;
+  left: 81% !important;
+  top: 0px;
+  width: 145px !important;
+  display: none !important;
+}
+.elements .two {
+  top: 40px !important;
+}
+.elements .three {
+  top: 60px !important;
+}
+.elements .four {
+  top: 70px !important;
+}
+.elements li:nth-child(1):hover .elementsmenu {
+  display: block !important;
+}
+.elements li:nth-child(2):hover .elementsmenu {
+  display: block !important;
+}
+.elements li:nth-child(3):hover .elementsmenu {
+  display: block !important ;
+}
+.elements li:nth-child(4):hover .elementsmenu {
+  display: block !important;
+}
+.menu .fa-search {
+  -webkit-transform: rotate(85deg);
+  transform: rotate(85deg);
+  font-size: 18px;
+  cursor: pointer;
+
+  margin-left: 5px;
+}
+
+.menu i:hover {
+  color: #f78b81;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.slidemenu {
+  position: relative;
+  z-index: 200;
+  left: 150px;
+  top: -22rem;
+  width: 350px;
+  height: 100px;
+}
+.slidemenu span {
+  color: rgb(255, 0, 0);
+}
+
+.slidemenu p {
+  color: rgb(155, 153, 153);
+  font-size: 15px;
+  padding-top: 15px;
+}
+.slidemenu h2 {
+  font-family: "Noticia Text", serif;
+  font-size: 42px;
+  margin-top: 10px;
+}
+
+.cardmenu {
+  margin-top: 30px;
+  width: 200px;
+}
+
+.cardmenu .fa-shopping-basket {
+  cursor: pointer;
+  margin: 10px 10px;
+  transform: rotate(0deg);
+  font-size: 20px;
+}
+
+.menu p {
+  font-size: 15px;
+  margin-right: 0;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 30px;
+}
+.menu span {
+  font-weight: 500;
+}
+
+.menu sup {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #ff7088;
+  position: relative;
+  right: 20px;
+}
+
+.menu sup p {
+  color: white;
+  font-size: 10px;
+  margin: 6px 4px;
+}
+
+.section2 ul li {
+  display: inline-block;
+
+  padding: 5px 5px;
+  margin: 10px 5px 10px 0px;
+}
+.section2 ul li a {
+  text-decoration: none;
+  color: rgb(155, 153, 153);
+  font-weight: 600;
+  text-align: center;
+  font-size: 14px;
+}
+.section2 ul li a:hover {
+  color: #f7786d;
+  transition: all 0.8s;
+}
+.categories {
+  display: none !important;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+.categories summary {
+  border: none;
+  outline: none;
+}
+
+.cardhover:hover .text {
+  visibility: visible;
+  transform: translateX(90px);
+  transition: linear 100ms;
+}
+.cardhover:hover .price {
+  visibility: hidden;
+}
+
+.flowercard .cards {
+  border: none;
+}
+.cardinner {
+  overflow: hidden;
+}
+.cardinner img {
+  transition: all 0.7s;
+}
+.cardinner img:hover {
+  transform: scale(1.05);
+}
+
+.flowercard .cards .cardbody {
+  border: none !important;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(75, 74, 74);
+}
+.cardbody span {
+  font-size: 14px;
+  color: rgb(155, 153, 153);
+}
+.cardbody .text {
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+  color: #f7786d;
+  font-size: 12px;
+}
+
+.cardbody .text:hover {
+  color: #f85344;
+}
+.valentinsection {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(246, 246, 246);
+}
+
+.valentinimage img {
+  margin: 15px 15px;
+}
+.valentincontext > div {
+  margin-top: 80px;
+  width: 450px;
+}
+
+.valentincontext h2 {
+  color: rgb(75, 74, 74);
+  font-family: "Noticia Text", serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 40px;
+}
+.valentincontext p {
+  font-size: 20px;
+  color: rgb(155, 153, 153);
+  margin-top: 10px;
+}
+.valentincontext h2 span {
+  color: rgb(243, 33, 33);
+}
+.valentincontext i {
+  color: rgb(243, 86, 71);
+}
+
+.expertmenu {
+  width: 550px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Noticia Text", serif;
+}
+.expertmenu h2 {
+  font-size: 45px;
+  line-height: 2;
+  font-weight: 400;
+}
+.expertmenu p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.flowerexpert {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flowerexpert div > p {
+  color: rgb(73, 71, 71);
+  font-weight: 600;
+  margin-left: 20%;
+  margin-top: 15px;
+}
+.flowerexpert div > span {
+  color: rgb(155, 153, 153);
+  margin-left: 34%;
+}
+.section5 {
+  width: 100%;
+}
+.section5 .parallaximage {
+  width: 100%;
+  height: 300px;
+  margin-top: 80px;
+}
+.parallaximage {
+  background: url("../img/h3-background-img.jpg");
+  width: 100%;
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.inputsearch {
+  position: absolute;
+  top: 45%;
+  left: 35%;
+}
+.inputsearch p {
+  color: white;
+  font-size: 35px;
+  display: flex;
+  margin-left: 50px;
+}
+#emailinput {
+  width: 350px;
+  height: 60px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+}
+.subscribe {
+  display: inline-block;
+  width: 150px;
+  height: 60px;
+  margin: 4px -5px;
+  border: none;
+  outline: none;
+  background-color: rgb(243, 86, 71);
+  color: white;
+  text-align: center;
+  padding-top: 18px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.subscribe:hover {
+  background-color: rgb(245, 70, 39);
+  transition: all 1s;
+}
+
+.blogmenu {
+  width: 500px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: "Noticia Text", serif;
+}
+.blogmenu h2 {
+  font-size: 35px;
+  line-height: 2;
+}
+.blogmenu p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.blogcontent {
+  margin-top: 5%;
+  font-family: sans-serif;
+}
+.blogcontent h2 {
+  font-size: 18px;
+}
+.blogcontent p {
+  font-size: 15px;
+}
+.blogcard {
+  border: none;
+  text-align: center;
+}
+.slider2 {
+  height: 300px;
+  margin-top: 30px;
+  width: 100%;
+}
+.slidercard {
+  position: absolute;
+  left: 35%;
+  height: 300px;
+  border: none;
+  opacity: 0;
+  width: 350px !important;
+}
+.active {
+  opacity: 1;
+  transition: all 1s;
+}
+i.angle {
+  position: relative;
+  bottom: 150px;
+  font-size: 30px;
+  cursor: pointer;
+  color: rgb(155, 153, 153);
+}
+.fa-angle-right {
+  left: 70%;
+}
+.fa-angle-left {
+  left: 27%;
+}
+.slider2 img {
+  width: 80px !important;
+  height: 80px !important;
+  position: relative;
+  top: 40px;
+  left: 40%;
+}
+.sliderbody {
+  padding: 50px 20px;
+  text-align: center;
+}
+.slidercard span {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  margin: 20px 20px;
+  color: rgb(155, 153, 153);
+}
+.foothercontent {
+  height: auto;
+  background-color: rgb(254, 250, 243);
+  border-bottom: 1px solid rgb(73, 71, 71);
+}
+.foothercontent h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.foothertop {
+  margin-top: 40px !important;
+}
+.footherbody a {
+  font-size: 15px !important;
+  padding-top: 10px !important;
+  line-height: 2.2;
+  color: rgb(151, 149, 149) !important;
+  text-decoration: none;
+}
+.footherbody a:hover {
+  color: #fd6b5d !important;
+  transition: all 1s;
+}
+.footherimage img {
+  position: relative;
+  left: 40%;
+  top: 80px;
+}
+
+ul.accordion {
+  list-style: none;
+  padding: 0;
+}
+.scrolltop{
+  position: fixed;
+  z-index: 200000;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(243, 79, 63);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.scrolltop .fa-chevron-up{
+  padding: 15px 15px;
+  font-size: 16px;
+  color: white;
+}
+ul.accordion .inner {
+  padding-left: 1em;
+  overflow: hidden;
+  display: none;
+}
+
+ul.accordion li.box {
+  margin: 0.5em 0;
+}
+
+ul.accordion li.box a.toggle {
+  width: 100%;
+  height: 50px;
+  display: block;
+  color: #2f2f2f;
+  padding: 0.75em;
+  border-radius: 0.15em;
+  border: 1px solid rgb(153, 153, 153);
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+.toggle .sign {
+  font-size: 18px;
+
+  font-weight: 600;
+}
+
+ul.accordion li.box a.toggle:hover {
+  background-color: red;
+  color: white;
+  transition: all 1s;
+}
+
+.jumbotronhead {
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+}
+.progressbars {
+  width: 100%;
+  height: 200px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.skill-name {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+.skill-bar {
+  height: 3px;
+  background: #cacaca;
+  border-radius: 8px;
+}
+
+.skill-per {
+  height: 3px;
+  background-color: rgb(243, 79, 63);
+  border-radius: 8px;
+  width: 0;
+  transition: 1s linear;
+  position: relative;
+}
+
+.skill-per::before {
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  color: rgb(32, 31, 31);
+  font-size: 18px;
+  border-radius: 4px;
+  top: -35px;
+  right: 0;
+  font-weight: 800;
+  font-family: "Quicksand", sans-serif;
+  transform: translateX(50%);
+}
+
+.progressbar2 {
+  margin-top: 80px;
+}
+.progressbar2 .skill-per::before {
+  left: 64rem;
+}
+.progressfoother {
+  margin-top: 80px;
+}
+
+.shopcard {
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrapper {
+  font-family: sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.shopcard img {
+  display: block;
+  width: 100%;
+  height: 320px;
+}
+.content {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(58, 54, 54);
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.content span {
+  font-size: 12px;
+  display: block;
+  width: 140px;
+  color: rgb(163, 160, 160);
+  padding-left: 25px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #fffefe;
+}
+.shopcard button {
+  margin-top: 20px;
+  background-color: rgb(243, 33, 33);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 10px;
+  width: 180px;
+  height: 50px;
+}
+.shopcard > span {
+  position: absolute;
+  left: 20px;
+  top: 12px;
+  z-index: 200;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(243, 33, 33);
+  padding: 4px 14px;
+}
+.shopcard .sold {
+  background-color: black;
+}
+
+.wrapper:hover .overlay {
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+.pluginslide {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  height: 500px;
+  margin-top: 100px;
+}
+.pluginslide > h4 {
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: rgb(163, 160, 160);
+}
+.item > span {
+  width: 60px;
+  background-color: rgb(255, 8, 8);
+  color: white;
+  margin-left: 15px;
+  padding: 5px 5px;
+  position: absolute;
+  text-align: center;
+  top: 7px;
+}
+.item .itemsold {
+  background-color: black;
+}
+.item {
+  height: 300px;
+}
+.flowercards {
+  border: none;
+  margin: 10px 0px;
+}
+.flowercards img {
+  height: 150px !important;
+  object-fit: cover;
+}
+.flowerprice {
+  font-size: 14px;
+  color: rgb(41, 40, 40);
+  text-align: center;
+  font-weight: 400;
+}
+.flowerprice span {
+  display: block;
+  margin-left: 22px;
+  width: 80px;
+  color: rgb(155, 153, 153);
+  font-size: 12px;
+}
+.tabs {
+  display: flex;
+  transform: translateX(-40px) translateY(16px);
+}
+.tabs div:nth-child(1) {
+  border-right: none;
+}
+.tabs div:nth-child(3) {
+  border-left: none;
+}
+.tab-link {
+  width: 160px;
+  height: 50px;
+  color: rgb(155, 154, 154);
+  padding: 16px 10px;
+  border: 0.5px solid rgba(228, 226, 226, 0.993);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.tab-content1 {
+  border: 0.5px solid rgba(214, 214, 214, 0.993);
+  padding: 40px 40px;
+  display: none;
+  color: rgb(151, 149, 149);
+}
+
+ul.tabs li {
+  list-style-type: none;
+}
+
+ul.tabs li.current {
+  background: #ff0c0c;
+  color: rgb(255, 255, 255);
+}
+
+.tab-content1 {
+  display: none;
+}
+
+.tab-content1.current {
+  display: block;
+}
+.tabgray {
+  background-color: rgb(246, 246, 246);
+  border: none;
+}
+.tablong {
+  border: none;
+  font-size: 13px;
+}
+.tabbody {
+  border: none;
+  border-top: 0.6px solid rgb(214, 214, 214);
+}
+.tabrow1 {
+  margin: 70px 0px;
+}
+.tabrow2 {
+  margin: 70px 0px;
+}
+.tabend {
+  display: block;
+  transform: translateY(0px);
+}
+.tabrow3 {
+  display: flex;
+}
+.productJumbotron span {
+  font-size: 18px !important;
+  display: block;
+  padding-top: 14px;
+  color: rgb(155, 154, 154);
+}
+.viewcard {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid rgb(155, 154, 154);
+  height: 90px;
+  margin-top: 40px;
+}
+.viewcard p {
+  padding-top: 30px;
+  color: rgb(155, 154, 154);
+}
+.viewcard button {
+  height: 50px;
+  width: 180px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: rgb(255, 61, 42);
+  position: relative;
+  left: 12%;
+  margin: 20px;
+}
+.orangesmallimg img {
+  height: 90px !important;
+  cursor: zoom-in;
+}
+.orangesmallimg .card {
+  margin-top: 50px;
+}
+.orangebigimg div {
+  margin: 50px 40px;
+}
+.orangebigimg img {
+  height: auto;
+  cursor: zoom-in;
+}
+.orangecontent {
+  margin-left: 12%;
+  margin-top: 4%;
+}
+.orangecontent h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
+.orangecontent span:nth-child(2) {
+  font-size: 16px;
+  color: rgb(155, 153, 153);
+}
+.orangecontent p {
+  font-size: 16px;
+  color: rgb(155, 154, 154);
+  padding-top: 20px;
+}
+.orangecontent .input {
+  width: 420px;
+  height: 50px;
+  border: 1px solid rgb(155, 154, 154);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.orangecontent .orangeinfo {
+  width: 200px;
+  line-height: 0.1;
+  margin-top: 30px;
+  font-size: 14px;
+}
+.orangeinfo span {
+  color: black;
+  font-size: 14px;
+}
+.orangecontent button {
+  height: 50px;
+  width: 180px;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+}
+.input p {
+  padding: 10px 18px;
+}
+.input span {
+  padding-top: 12px;
+}
+.input i {
+  font-size: 13px;
+  padding: 5px 10px;
+}
+.review {
+  display: flex;
+}
+.review .reviewimg img {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+.reviewbox h2 {
+  padding: 40px 40px;
+  font-size: 40px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.reviewinput textarea {
+  border: 1px solid rgb(194, 193, 193) !important;
+  width: 100%;
+}
+.reviewcontent span:nth-child(1) {
+  font-size: 14px;
+  color: black;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.reviewcontent span:nth-child(2) {
+  font-size: 12px;
+  color: rgb(155, 154, 154);
+  padding-left: 12px;
+}
+.reviewcontent p {
+  margin-top: 10px;
+  color: rgb(155, 155, 155);
+  font-size: 15px;
+}
+.inputproduct input {
+  width: 100%;
+  height: 50px;
+  padding-top: 20px;
+  border: 1px solid rgb(192, 190, 190) !important;
+}
+.inputproduct #checkbox {
+  width: 20px;
+  margin-left: 0;
+}
+.inputproduct button {
+  width: 140px;
+  height: 50px;
+  background-color: rgb(243, 33, 33);
+  color: white;
+  border: none;
+  outline: none;
+}
+.addition {
+  height: 200px;
+  font-size: 14px;
+}
+
+.additioncontent {
+  position: absolute;
+  left: 10%;
+  margin-top: 30px;
+}
+.additioncontent p {
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
+}
+.additioncontent span {
+  font-size: 13px;
+  color: rgb(155, 154, 154);
+}
+.productdescription h2 {
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 0px;
+}
+.productdescription p {
+  font-size: 16px;
+  color: rgb(155, 155, 155);
+}
+.productlistmenu a {
+  font-size: 20px;
+  background: linear-gradient(to bottom, rgb(233, 61, 61), rgb(189, 104, 93));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: none !important;
+}
+.accordion2 {
+  margin: 70px 0px;
+}
+.toggleborder {
+  border: none !important;
+  border-bottom: 1px solid rgb(155, 154, 154) !important;
+}
+.toggleborder:hover {
+  background-color: white !important;
+  color: #fd6b5d !important;
+  transition: all 0.4s;
+}
+.main {
+  background-color: red;
+}
+
+@media only screen and (max-width: 1250px) {
+  .valentincontext > div {
+    width: 350px !important;
+    margin-left: 60px;
+  }
+
+  .shopcard {
+    margin: 0 auto !important;
+  }
+  .navbar {
+    display: none !important;
+  }
+  .fa-bars {
+    display: block !important;
+  }
+
+  .cardmenu {
+    display: none !important;
+  }
+  .longprogress {
+    display: none !important;
+  }
+  .viewcard {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .slidemenu {
+    display: none;
+  }
+  .shopcard {
+    margin: 0 auto !important;
+  }
+  .categories {
+    display: block !important;
+  }
+  .section2 ul li a {
+    display: none;
+  }
+  .valentinimage img {
+    margin-left: 30px;
+    width: 600px;
+    height: 500px;
+  }
+  .valentinimage {
+    margin: 0 auto;
+  }
+  .valentinimage img {
+    width: 500px;
+    height: 300px;
+  }
+  .flowercards {
+    margin: 0 auto !important;
+  }
+  .valentincontext > div {
+    width: 250px !important;
+    margin: 0 auto;
+  }
+  .valentincontext h2 {
+    color: rgb(75, 74, 74);
+    font-family: "Noticia Text", serif;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 25px;
+  }
+  .valentincontext p {
+    font-size: 15px;
+    color: rgb(155, 153, 153);
+    margin-top: 5px;
+  }
+  .valentincontext h2 span {
+    color: rgb(243, 33, 33);
+  }
+  .valentincontext i {
+    color: rgb(243, 86, 71);
+    font-size: 12px;
+  }
+  .flowerexpert {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flowerexpert div > p {
+    color: rgb(73, 71, 71);
+    font-weight: 600;
+    margin-left: 25%;
+    margin-top: 15px;
+  }
+  .flowerexpert div > span {
+    color: rgb(155, 153, 153);
+    margin-left: 40%;
+  }
+  .inputsearch {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .valentinimage img {
+    width: 600px;
+    height: 400px;
+    margin-left: 15%;
+  }
+
+  .shopcard span:nth-child(1) {
+    display: none !important;
+  }
+  .shopcard {
+    margin: 0 auto !important;
+    margin-top: 20px !important;
+  }
+  .flowercards {
+    margin: 0 auto !important;
+  }
+  .twoskillbar {
+    display: none !important;
+  }
+  .valentincontext h2 {
+    color: rgb(75, 74, 74);
+    font-family: "Noticia Text", serif;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 35px;
+  }
+  .valentincontext p {
+    font-size: 25px;
+    color: rgb(155, 153, 153);
+    margin-top: 5px;
+  }
+  .valentincontext h2 span {
+    color: rgb(243, 33, 33);
+  }
+  .valentincontext i {
+    color: rgb(243, 86, 71);
+    font-size: 18px;
+  }
+  .valentincontext > div {
+    width: 650px !important;
+  }
+  .flowerexpert {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flowerexpert div > p {
+    color: rgb(73, 71, 71);
+    font-weight: 600;
+    margin-left: 14%;
+    margin-top: 15px;
+  }
+  .flowerexpert div > span {
+    color: rgb(155, 153, 153);
+    margin-left: 25%;
+  }
+  .inputsearch {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+  }
+  .blogcard {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .fa-angle-right {
+    left: 73%;
+  }
+  .fa-angle-left {
+    left: 22%;
+  }
+  .slidercard {
+    width: 60% !important;
+    position: absolute;
+    left: 20%;
+  }
+  i.angle {
+    display: none;
+  }
+  .slider2 img {
+    width: 70px !important;
+    height: 70px !important;
+    position: relative;
+    top: 20px;
+    left: 42%;
+  }
+  .sliderbody {
+    padding: 30px 30px;
+    margin-right: 10px;
+  }
+  .slidercard span {
+    display: inline-block;
+    width: 120px;
+    font-size: 13px;
+    text-align: center;
+    margin: 10px auto;
+    color: rgb(155, 153, 153);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .flowercard {
+    margin-left: 25% !important;
+  }
+  .orangesmallimg {
+    display: none !important;
+  }
+  .orangebigimg div {
+    margin: 0 auto;
+  }
+  .orangecontent {
+    margin: 0 auto;
+  }
+  .tabrow3 {
+    display: none !important;
+  }
+  .shopcard {
+    margin: 0 auto !important;
+    margin-top: 20px !important;
+  }
+  .flowercards {
+    margin: 0 auto !important;
+  }
+  .valentinimage img {
+    margin-left: 50px !important;
+    width: 500px;
+    height: 350px;
+  }
+
+  .valentincontext > div {
+    width: 250px !important;
+    margin: 0 auto;
+  }
+  .valentincontext h2 {
+    color: rgb(75, 74, 74);
+    font-family: "Noticia Text", serif;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 25px;
+  }
+  .valentincontext p {
+    font-size: 15px;
+    color: rgb(155, 153, 153);
+    margin-top: 5px;
+  }
+  .valentincontext h2 span {
+    color: rgb(243, 33, 33);
+  }
+  .valentincontext i {
+    color: rgb(243, 86, 71);
+    font-size: 12px;
+  }
+  .expertmenu {
+    width: 550px;
+    text-align: center;
+  }
+  .expertmenu h2 {
+    font-size: 25px;
+  }
+  .expertmenu p {
+    font-size: 18px;
+  }
+  .flowerexpert {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto !important;
+  }
+
+  .flowerexpert div > p {
+    color: rgb(73, 71, 71);
+    font-weight: 600;
+    margin-left: 13%;
+    margin-top: 15px;
+  }
+  .flowerexpert div > span {
+    color: rgb(155, 153, 153);
+    margin-left: 23%;
+  }
+  .inputsearch {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+  }
+  .blogcard {
+    margin: 30px auto;
+    text-align: center;
+  }
+  .slidercard {
+    width: 60% !important;
+    position: absolute;
+    left: 18%;
+  }
+  i.angle {
+    display: none;
+  }
+  .slider2 img {
+    width: 70px !important;
+    height: 70px !important;
+    position: relative;
+    top: 20px;
+    left: 42%;
+  }
+  .sliderbody {
+    padding: 30px 30px;
+    margin-right: 10px;
+  }
+  .slidercard span {
+    display: inline-block;
+    width: 120px;
+    font-size: 13px;
+    text-align: center;
+    margin: 10px auto;
+    color: rgb(155, 153, 153);
+  }
+}
+@media only screen and (max-width: 550px) {
+  .categories summary {
+    font-size: 12px;
+  }
+  .shopcard {
+    margin: 0 auto !important;
+    margin-top: 20px !important;
+  }
+  .categories p {
+    font-size: 10px;
+    line-height: 1;
+  }
+  .flowercard {
+    margin: 0 auto !important;
+  }
+
+  .valentinimage img {
+    width: 220px;
+    height: 140px;
+  }
+  .valentincontext > div {
+    width: 250px !important;
+    margin-left: 30px !important;
+  }
+  .valentincontext h2 {
+    color: rgb(75, 74, 74);
+    font-family: "Noticia Text", serif;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 20px;
+  }
+  .valentincontext p {
+    font-size: 12px;
+    color: rgb(155, 153, 153);
+    margin-top: 5px;
+  }
+  .valentincontext h2 span {
+    color: rgb(243, 33, 33);
+  }
+  .valentincontext i {
+    color: rgb(243, 86, 71);
+    font-size: 10px;
+  }
+  .expertmenu {
+    width: 250px;
+  }
+  .expertmenu h2 {
+    font-size: 15px;
+  }
+  .expertmenu p {
+    font-size: 14px;
+  }
+  .flowerexpert {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5% !important;
+  }
+
+  .flowerexpert div > p {
+    color: rgb(73, 71, 71);
+    font-weight: 600;
+    margin-left: 20%;
+    margin-top: 15px;
+  }
+  .flowerexpert div > span {
+    color: rgb(155, 153, 153);
+    margin-left: 34%;
+  }
+  .inputsearch {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+  }
+  .inputsearch p {
+    color: white;
+    font-size: 18px;
+    display: flex;
+    margin-left: 50px;
+  }
+  #emailinput {
+    width: 270px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    margin: 0 10px;
+  }
+  .subscribe {
+    display: inline-block;
+    width: 90px;
+    height: 40px;
+    margin: 4px 100px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    background-color: rgb(243, 86, 71);
+    color: white;
+    text-align: center;
+    padding-top: 13px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .subscribe:hover {
+    background-color: rgb(245, 70, 39);
+    transition: all 1s;
+  }
+  .blogmenu {
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+    font-family: "Noticia Text", serif;
+  }
+  .blogmenu h2 {
+    font-size: 25px;
+    line-height: 2;
+  }
+  .blogmenu p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .blogcard {
+    text-align: center;
+  }
+  .slidercard {
+    width: 80% !important;
+    position: absolute;
+    left: 10%;
+  }
+  i.angle {
+    display: none;
+  }
+  .slider2 img {
+    width: 60px !important;
+    height: 60px !important;
+    position: relative;
+    top: 20px;
+    left: 40%;
+  }
+  .sliderbody {
+    padding: 20px 20px;
+  }
+  .slidercard span {
+    display: inline-block;
+    width: 120px;
+    font-size: 13px;
+    text-align: center;
+    margin: 15px auto;
+
+    color: rgb(155, 153, 153);
+  }
+  .flowercards {
+    margin: 0 auto !important;
+  }
+  .orangebigimg {
+    margin: 0 auto;
+  }
+}
